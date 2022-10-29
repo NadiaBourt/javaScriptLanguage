@@ -5,15 +5,12 @@ const readline = require('readline').createInterface({
 readline.question('Enter your number  ', number => {
    console.log("number");
     number = Math.round(number);
-   if (number<0)
-   {
+   if (number<0) {
        number = -number;
-      sumDigits(number);
    }
-   else {
        sumDigits(number);
-   }
-});
+    readline.close();
+   });
 
 
 function sumDigits(number) {
@@ -25,5 +22,4 @@ function sumDigits(number) {
                 number = ((number - digit) / 10);
             }
             console.log("SUM Number", sum);
-            readline.close();
-    }
+           }
