@@ -1,30 +1,16 @@
-body
-{
+body {
+display:flex;
+flex-direction: column;
+align-items: center;
+                       }
+.word-guess {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.word-guess
-{
-    display: flex;
-    flex-direction: row;//строка из букв
-
-}
-.title
-{
-    font-family: Tahoma;
-    font-size: 2em;
-    color: blue;
+    flex-direction: row;
 }
 .letter-guess {
-    font-size: 2.5em;
-    margin-outside: 3em;
-}
-.result
-{
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1vw;
-    font-size: 2em;
+    font-size: 1.5em;
+    margin-left: 2vw;
+    background-color: lightgray;
+    width: 3.5vw;
+    text-align: center;
 }
