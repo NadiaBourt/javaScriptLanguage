@@ -47,9 +47,9 @@ function fabricationMethod(nEmployees)
 console.log(`Array of employees `,fabricationMethod(nEmployees));
 
 let newArray = emlArr.slice()
-//console.log(`new array`, newArray)
+console.log(`new array`, newArray)
 
-let currentValue = 0;
+//let currentValue = 0;
 function sum(newArray) {
     let initialValue1 = 0;
     let currentDate = new Date();
@@ -59,3 +59,34 @@ function sum(newArray) {
     }, initialValue1)
     return sumAge}
 console.log("Average = ", sum(newArray)/nEmployees)
+
+let salaryFrom = 5000;
+let salaryTo = 10000;
+let arrayNewEmployee;
+
+function getEmployeesBySalary (newArray) {
+   arrayNewEmployee = newArray.filter(function (sal)
+    {
+     return sal.salary<=salaryTo;
+}, )
+    return arrayNewEmployee;
+}
+console.log("salary", getEmployeesBySalary(newArray));
+
+
+
+// console.log("array2", arrayNewEmployeesAfterFilter)
+//
+// function sortingSalary (arrayNewEmployeesAfterFilter) {
+//     arrayNewEmployeesAfterFilter.sort((salaryPrev, salaryNext)=>
+//         (salaryPrev.salary-salaryNext.salary));
+// }
+// console.log("salary after sorting", sortingSalary(arrayNewEmployeesAfterFilter))
+//
+//
+// //arrayNewEmployeesAfterFilter.sort((salaryFrom,salaryTo)=> salaryTo.salary - salaryFrom.salary);
+// //}
+//
+// // let sortArrayEmployee = newArray.sort(function (salaryFrom, salaryTo){
+// //     return (parceFloat saloryFrom - )
+// // })
