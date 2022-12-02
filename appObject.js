@@ -47,7 +47,7 @@ function fabricationMethod(nEmployees)
 console.log(`Array of employees `,fabricationMethod(nEmployees));
 
 let newArray = emlArr.slice()
-console.log(`new array`, newArray)
+//console.log(`new array`, newArray)
 
 //let currentValue = 0;
 function sum(newArray) {
@@ -63,17 +63,30 @@ console.log("Average = ", sum(newArray)/nEmployees)
 let salaryFrom = 5000;
 let salaryTo = 10000;
 let arrayNewEmployee;
+const percent = 10;
+const borderSalary = 8000;
 
-function getEmployeesBySalary (newArray) {
-   arrayNewEmployee = newArray.filter(function (sal)
-    {
-     return sal.salary<=salaryTo;
-}, )
+function getEmployeesBySalary (newArray, salaryFrom, salaryTo) {
+   arrayNewEmployee = newArray.filter (newArray=>newArray.salary>=salaryFrom && newArray.salary<=salaryTo);
+   arrayNewEmployee.sort((e1,e2)=>e1.salary<e2.salary?-1:1);
     return arrayNewEmployee;
 }
-console.log("salary", getEmployeesBySalary(newArray));
+console.log("salary ==", getEmployeesBySalary(newArray,salaryFrom,salaryTo));
+console.log("array of  Employee with salary less than 8000 $ = ", arrayNewEmployee)
+let arrayPercent = arrayNewEmployee.slice();
+console.log("array PERCENT = ", arrayPercent)
 
 
+function plusPercentSalary(arrayPercent, borderSalary, percent){
+arrayPercent.forEach(eml=>{
+    if (eml.salary<=borderSalary)
+    {
+    const increase = eml.salary*percent/100;
+    eml.salary+=increase;
+    }
+})
+}
+console.log(`Array of Employee +salary 10% = `, plusPercentSalary(arrayPercent,borderSalary,percent))
 
 // console.log("array2", arrayNewEmployeesAfterFilter)
 //
