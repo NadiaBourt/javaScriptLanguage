@@ -78,7 +78,7 @@ console.log("array PERCENT = ", arrayPercent)
 
 
 function plusPercentSalary(arrayPercent, borderSalary, percent){
-arrayPercent.forEach(eml=>{
+    let result = arrayPercent.forEach(eml=>{
     if (eml.salary<=borderSalary)
     {
     const increase = eml.salary*percent/100;
