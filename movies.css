@@ -1,0 +1,22 @@
+.movies-list
+{
+
+    list-style: none;
+    overflow: auto;
+}
+.movie-item
+{
+
+}
+.movie-image
+{
+    width: 15vw;
+    height: 19vw;
+}
+.buttons
+{
+
+    background-color: aqua;
+    font-family: "Arial Narrow";
+
+}
