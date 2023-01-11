@@ -1,19 +1,27 @@
+body{
+        background-color: aquamarine;
+}
 h1{
     text-transform: uppercase;
     font-style: italic;
-    font-size: x-large;
+    font-size: 14px;
     color: red;
     width: fit-content;
-
     background-color: blue;
 }
 table, th, td {
-    border: 0.2px solid black;
+    border: 1px solid yellow;
     border-collapse: collapse;
 }
-body{
-    background-color: aquamarine;
+ul{
+color: blue;
+}
+ol{
+color: green;
 }
 img{
-    
+    width: 300px;
+    border: 1px solid yellow;
+    border-collapse: collapse;
+    border-color: red;
 }
