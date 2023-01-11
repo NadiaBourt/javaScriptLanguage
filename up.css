@@ -4,6 +4,7 @@ h1{
     font-size: x-large;
     color: red;
     width: fit-content;
+
     background-color: blue;
 }
 table, th, td {
