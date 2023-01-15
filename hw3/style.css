@@ -1,33 +1,40 @@
 *{
+font-family: font-family: Verdana, Helvetica, Arial, sans-serif;
 margin: 0;
 }
 body{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 10px;
     display: block;
     justify-content: center;
-    /*margin: 13px;*/
-    background-color: aquamarine;
+    background-color: white;
 }
 main{
-padding:10px;
+justify: center;
+padding:10px 0px 0px 0px ;
+width: 100%;
 }
 .header{
-    height: 39px;/*not working*/
-    width: 350px;/*not working*/
-    background-image: url("././images/back.png"); /*not working*/
+    padding: 2px;
+    height: 485px;
+    width: 100%;
+    background-image: url("././images/back.png");
     background-repeat: no-repeat;
-    font-size: 30px;
+    background-position: right;
+    font-size: 75px; /*NOT WORK!!!???*/
     color: brown;
-    font: 35px;
-}
-table, th, td {
-    border: 0.2px solid black;
-    border-collapse: collapse;
+    font-size: 35px;
+    text-align: center;
+    background-color: white;
+
 }
 
 img{
     width: 300px;
     height: 260px;
-    border: 2px solid red;
+    border: 2px solid brown;
     border-radius: 20%;
 }
 .photo{
@@ -36,20 +43,16 @@ width: 100px;
 }
 .styles-design{
 color-font: blue;}
+h2{
+text-align: center;
+color: brown;
+}
 h3{
-color-font: blue;
+text-align: center;
+color: brown;
 }
-/*.outer1{
-padding: 25px;
-height: 300px;
-background-color: green;
+#photo1{
+width: 380px;
+padding: 0px 0px 0px 75px;
 }
-.inner1{
-height: 25px;
-height: 80%;
-background-color: blue;
-}
-.outer2{
-height: 200px;
-background-color: red;
-}*/
+
