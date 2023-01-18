@@ -1,0 +1,76 @@
+*{
+font-family: font-family: Verdana, Helvetica, Arial, sans-serif;
+margin: 0;
+letter-spacing: 1px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 0px;
+    display: block;
+    justify-content: center;
+    background-color: white;
+
+}
+.main{
+justify: center;
+padding:10px 0px 0px 0px ;
+width: 100%;
+
+}
+.header{
+    padding: 2px;
+    height: 300px;
+    width: 100%;
+    background-image: url("././img_1.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    color: brown;
+    text-align: center;
+    background-color: white;
+
+}
+
+img{
+    width: 80%;
+    height: 80%;
+    border: 2px solid brown;
+    padding: 20px;
+    }
+.photo{
+height: 100%;
+width: 100%;
+}
+.styles-design{
+color-font: blue;}
+h2{
+text-align: center;
+color: brown;
+}
+h3{
+text-align: center;
+color: brown;
+}
+#photo1{
+width: 600px;
+padding: 60px 0px 0px px;
+}
+.header > h1 {
+padding: 100px 690px 150px 25px;
+color: #214e34;
+text-transform: uppercase;
+}
+.main p > a:link{
+color: green;
+}
+.main p > a:visited{
+color: red;
+}
+.main p > a:hover{
+color: yellow;
+}
+.main p > a:active{
+color: blue;
+}
+
