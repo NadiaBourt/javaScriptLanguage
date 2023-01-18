@@ -5,6 +5,7 @@ font-family: font-family: Verdana, Helvetica, Arial, sans-serif;
 margin: 0;
 }
 body{
+    text-align: justify;
     font-family: 'Roboto', sans-serif;
     width: 100vw;
     height: 100vh;
@@ -25,7 +26,7 @@ width: 100%;
 .header{
 
     height: 580px;
-    background-image: url("././images/back.png");
+    background-image: url(././img.png);
     background-repeat: no-repeat;
     background-position: right;
     color: brown;
@@ -62,10 +63,10 @@ h3{
 text-align: center;
 color: brown;
 }
-ul{
+table{
 padding: 60px;
 }
-.main > .styles-design > li {
+.main > .styles-design > td {
 margin: 100px 0;
 padding: 2px;
 color: brown;
@@ -78,21 +79,21 @@ font-weight: 600;
 padding: 0 10px;
 text-transform: uppercase;
 }
-body span {
+body p {
 color: green;
 }
-main span > a:link {
+main p > a:link {
 color: #214e34;
 font-weight: 500;
 text-transform: uppercase;
 }
-main span > a:visited {
+main p > a:visited {
 color: blue;
 }
-main span > a:hover {
+main p > a:hover {
 color: red;
 }
-main span > a:active {
+main p > a:active {
 color: yellow;
 }
 
