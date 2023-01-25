@@ -9,22 +9,20 @@ body{
     box-sizing: border-box;
     padding: 0px;
     display: block;
-    justify-content: center;
     background-color: white;
-
+    left: 15px;
 }
 .main{
-justify: center;
-padding:10px 0px 0px 0px ;
+padding:10px 0px 0px 10px ;
 width: 100%;
-position: absolute;
-
+height: 300px;
+position: relative;
 }
 .header{
     padding: 2px;
-    height: 300px;
-    width: 100%;
-    background-image: url("././img_1.png");
+    height: 150px;
+    width: 90%;
+    background-image: url("./img_1.png");
     background-repeat: no-repeat;
     background-position: right;
     color: brown;
@@ -32,13 +30,12 @@ position: absolute;
     background-color: white;
 
 }
-
 .footer > img{
-    width: 80%;
-    height: 80%;
+    width: 60%;
+    height: 60%;
     border: 2px solid brown;
-    padding: 20px;
-    bottom: 0;
+    padding: 10px;
+    top: 10px;
     position: absolute;
     }
 .photo{
@@ -56,7 +53,8 @@ color: brown;
 }
 #photo1{
 width: 50%;
-padding: 60px 0px 0px px;
+height: 50%;
+padding: 40px 0px 0px 10px;
 }
 .header > h1 {
 padding: 100px 690px 150px 25px;
@@ -76,13 +74,18 @@ color: yellow;
 color: blue;
 }
 .left, .right{
-border-color: red solid 2px ;
+border-color: 2px solid red;
 position: absolute;
 top: 0;
 width: 49%;
 }
+.left > div, .right > div{
+height: 80px;
+overflow: auto;
+}
 .footer{
-height: 100px;
+height: 150px;
+position: relative;
 }
 .left{
 left: 0;
@@ -90,9 +93,18 @@ left: 0;
 .right{
 right: 0;
 }
-html{
-position: relative;}
 .left > div, .right > div {
 margin: 10px 0;
 border-bottom: 1px solid green;
+}
+.main > footer{
+height: 50vh;
+width: 50vw;
+position: absolute;
+left: 0;
+top: calc(50% - 100px / 2)
+}
+img{
+width: 850px;
+height: 500px;
 }
