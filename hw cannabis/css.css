@@ -1,0 +1,32 @@
+.flex-container{
+width: 900px;
+height: 450px;
+background-color: pink;
+margin: 0 auto;
+display: flex;
+
+}
+.item{
+width: 250px;
+height: 150px;
+background-color: blue;
+font-size: 3em;
+text-align: center;
+color: whitesmoke;
+}
+.red{
+background-color: red;
+
+}
+.green{
+background-color: green;
+}
+.yellow{
+background-color: yellow;
+}
+.blue {
+background-color: blue;
+}
+.black{
+background-color: black;
+}
