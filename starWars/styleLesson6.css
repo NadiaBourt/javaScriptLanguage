@@ -44,9 +44,6 @@ float: left;
 width: 25%;
 margin: 5px 5px 3px 0;
 }
-/*.team{
-text-align: center;
-}*/
 .right{
 text-align: center;
 float: right;
@@ -66,7 +63,7 @@ text-align: center;
 position: relative;
 background-color: rgba(60, 69, 67, 0.6);
 border-radius: 0 0 15px 15px;
-height: 6em;
+height: 100px;
 clear: both;
 padding: 2px;
 }
@@ -75,15 +72,15 @@ border: 2px solid gold;
 border-radius: 10px;
 background-color: rgba(204, 3, 35, 0.5);
 cursor: pointer;
-width: 120px;
+width: 150px;
 padding: 3px;
 position: absolute;
-top: 4em
-left: 16em;
+top: 50px;
+left: 400px;
 }
 .email{
 color: black;
-font-size: 1.3em;
+font-size: 1.5em;
 }
 .bottomLeft{
 border-bottom-left-radius: 15px;
@@ -91,12 +88,11 @@ border-bottom-left-radius: 15px;
 .bottomRight{
 border-bottom-right-radius: 15px;
 }
-.imagesTeam{
+.image{
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 justify-content: center;
-
 }
 .team{
 height: 35px;
@@ -108,8 +104,8 @@ font-variant: small-caps;
 padding: 1px;
 text-align: center;
 }
-.imagesTeam div {
-size: 0.5em;
-width: 0.2em;
+.image div {
+size: 200px;
+width: 200px;
 }
 
