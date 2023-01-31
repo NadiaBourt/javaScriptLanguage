@@ -39,7 +39,7 @@ margin: 5px 5px 3px 0;
 display: inline;
 float: right;
 width: 55%;
-margin: 5px 0 0px 5px;
+margin: 3px 0 0px 3px;
 border: 2px solid gold;
 border-radius: 0 0 10px 10px;
 flex-wrap: wrap;
@@ -95,6 +95,7 @@ flex-wrap: wrap;
 height: 35px;
 padding: 2px;
 justify-content: center;
+align-items: center;
 }
 .button p{
 font-size: 0.8em;
@@ -102,15 +103,11 @@ font-variant: small-caps;
 padding: 1px;
 text-align: center;
 }
-/*.image div {
-size: auto;
-width: auto;
-flex-shrink: 0;
-margin: 0;
-background-size: cover;
-}*/
-img{
+.image img{
 width: 230px;
 height: 230px;
+}
+.left img{
+box-shadow: rgba(60, 69, 67, 0.6) 10px 10px;
 }
 
