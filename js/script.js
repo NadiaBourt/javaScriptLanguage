@@ -6,15 +6,18 @@ function printArray(primes) {
 }
 
 let array = [1,3,5,6,7,8,-9]
-reverseArray(array);
+bubbleSort(array);
 
-function reverseArray(array) {
-    let revArray=[];
-    let counter = 0;
-    for (let i=array.length-1; i>=0 ;i--){
-        revArray[counter] = array[i];
-        counter++;
+function bubbleSort(array) {
+    let newArray = [];
+    for (let i = 0, j = array.length - 1; i < j; i++, j--) {
+        if (i < j) {
+        }
+        let temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
     }
+}
     console.log('2) Reversed array: ', revArray.join(', '));
 
 }
