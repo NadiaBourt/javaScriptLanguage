@@ -1,44 +1,79 @@
+const arr = [9,4,7,-1,6,0,3,5,0];
+printArray(arr);
+printArray(bubbleSort(arr));
 
-const primes = [2,3,5,7,11,13,17,19];
-printArray(primes);
-function printArray(primes) {
-    console.log("1) PRINT ARRAY", primes.join(', ' ));
+function printArray(x){
+    console.log("output", x);
+}
+function bubbleSort(arr) {
+
+    for (let i = 0; i < arr.length; i++) {
+
+        for (let j = 0; j < arr.length; j++) {
+
+            if (arr[j] > arr[j + 1]) {
+
+                let tmp = arr[j];
+
+                arr[j] = arr[j + 1];
+
+                arr[j + 1] = tmp;
+
+            }
+
+        }
+
+    }
+    return arr;
 }
 
-let array = [1,3,5,6,7,8,-9]
-bubbleSort(array);
+const obj={};
+const peter=
+    {
+    firstName: 'Peter',
+    lastName: 'Box',
+    age: 19
+    }
+    // console.log(peter);
+const person = [
+    new Person (2345, 'Calvin', 'Klein', 94),
+    new Person (3000, 'Mary', 'Johnson', 33),
+    new Person (2000, 'Michael', 'Jordan', 32),
+    new Person (3002, 'Noa', 'Cohen', 45),
+    new Person (4021, 'Lars', 'Von Trier', 66)]
+peter.id = 247455;
+// console.log(peter.id);
+// console.log(peter.firstName);
 
-function bubbleSort(array) {
-    let newArray = [];
-    for (let i = 0, j = array.length - 1; i < j; i++, j--) {
-        if (i < j) {
-        }
-        let temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
+function Person (id, firstName, lastName, age) {
+    this.id = +id;
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = +age;
+
+    this.fullName = function () {
+
+        return `${this.firstName} ${this.lastName} ${this.id} ${this.age}`;
+
     }
 }
-    console.log('2) Reversed array: ', revArray.join(', '));
+console.log(person);
 
-}
+// printObject(peter);
+// function printObject(obj){
+//     for (let key in obj){
+//         if (typeof obj[key]==='function'){
+//             console.log(`${key} -> ${obj[key]}`);
+//         }
+//         else {
+//             console.log(`${key} -> ${obj[key]}`)
+//         }
+//     }
+// }
 
-let arr = [2,60,9,61,-5,0,4];
-let arr1 = [2,60,9,61,0,4];
-let index =-1;
-let value = -5;
-let value2 = 7;
-index=search(arr, value);
-console.log(`3) value ${value} on i = ${index}`);
-index=search(arr1, value2);
-console.log(`4) value ${value2} on i = ${index}`);
+sorting(person);
 
-function search(arr, value) {
-    let res = -1;
-    for (let i=0; i<arr.length; i++) {
-            if (value === arr[i]) {
-            res = i;
-            i=arr.length;
-        }
-    }
-    return res;
+function sorting(person) {
+    const newPerson = person.sort((prev, next) => prev.age - next.age);
+    console.log('NEW SORTING BY AGE =',newPerson);
 }
