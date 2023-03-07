@@ -2,10 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Library</title>
-  <script src="jscript.js"></script>
+    <title>EVENTS</title>
+    <script src="./jscript.js" defer></script>
 </head>
 <body>
+<div id = "Box">
+    <p> <label>ISBN (number only):
+        <input type="number" id="isbn">
+    </label>
+    </p>
+    <label>Title:
+        <input type="text" id="title">
+    </label>
+    <label>Author:
+        <input type="text" id="author">
+    </label>
+    <label>Year of (number only):
+        <input type="number" id="year">
+    </label>
+</div>
+<button id ="pushButton" onclick="addBook()"> Push me!</button>
 
+<button id="showButton" onclick="showLibrary()">Show library</button>
+
+<p id="output"></p>
 </body>
 </html>
