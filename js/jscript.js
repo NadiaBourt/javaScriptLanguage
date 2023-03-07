@@ -1,34 +1,37 @@
 let library = [];
-const arrLength = prompt("Enter number of books");
-        for (let i=0; i<+arrLength; i++) {      //for enter number
-        let inputData = prompt('Enter book data separate by ";"');
-        let arr = inputData.split(';');
-        const person = {
-            isbn: +arr[0],  //number
-            title: arr[1].trim(),   //string
-            author: arr[2].trim(),  //string
-            year: +arr[3],   //number
-                }
-             library.push(person);
-         }
+let inputData = prompt("Enter book data separate by';'");
+            while (inputData){
+            const arr = inputData.split(';');
+        if (findBook(library,arr[0])===-1){
+              const book = new Book (arr[0], arr[1], arr[2], arr[3]);
+              library.push(book);
+        }
+                inputData = prompt("Enter book data separate by';'");
+        }
+
     console.log(typeof library);
     console.log(library);
     
+    function printLibrary(library) {
+        for (let i=0; i<library.length; i++){
+            console.log(library[i].toString());
+        }
+    }
     function findBook(library, isbn) {
         for (let i=0; i<library.length; i++){
-            if (library[i].isbn===i){
+            if (library[i].isbn===isbn){
                 return i;
             }
             }
         return -1;
     }
 
-function book (isbn,title,author,year) {
-    this.isbn = isbn;
+function Book (isbn,title,author,year) {
+        this.isbn = +isbn;
         this.title = title;
         this.author = author;
-        this.year = year;
-    this.toSorting = function (){
+        this.year = +year;
+    this.toString = function (){
         return `ISBN: ${this.isbn}, Title: ${this.title}, Author: ${this.author}, Year of: ${this.year}`;
     }
 }
