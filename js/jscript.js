@@ -22,7 +22,16 @@ const arrLength = prompt("Enter number of books");
             }
         return -1;
     }
-    
+
+function book (isbn,title,author,year) {
+    this.isbn = isbn;
+        this.title = title;
+        this.author = author;
+        this.year = year;
+    this.toSorting = function (){
+        return `ISBN: ${this.isbn}, Title: ${this.title}, Author: ${this.author}, Year of: ${this.year}`;
+    }
+}
 //
 // console.log(arr);
 // console.log(typeof arr);
@@ -60,13 +69,8 @@ const arrLength = prompt("Enter number of books");
 
     //
 // //
-// //const arr = function book (isbn,title,author,year) {
-//          this.isbn = isbn,
-//          this.title = title,
-//          this.author = author,
-//          this.year = year
-// }
-// console.log(inputData);
+
+//console.log(inputData);
 // console.log(arr);
 // for (let i=0; i<library.length; i++){
 //     library.push(arr);
