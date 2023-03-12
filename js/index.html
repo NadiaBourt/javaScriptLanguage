@@ -2,10 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Library</title>
-  <script src="jscript.js"></script>
+    <title>EVENTS</title>
+    <script src="./jscript.js" defer></script>
+    <link rel="stylesheet" href="./changeLib.css">
 </head>
 <body>
+<form action="/" method="post" id="form">
+   <p> <label>ISBN (number only):
+    <input type="number" id="isbn">
+    </label>
+   </p>
+    <label>Title:
+    <input type="text" id="title">
+    </label>
+    <label>Author:
+    <input type="text" id="author">
+    </label>
+    <label>Year of (number only):
+    <input type="number" id="year">
+    </label>
+</form>
+<button type="submit" onclick="Book()"> Push me!</button>
 
+<button id="showButton">Show library</button>
 </body>
 </html>
