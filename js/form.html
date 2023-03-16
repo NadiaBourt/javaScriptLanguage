@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    </head>
+    <body>
+    <form name="registration" action="#" method="get">
+    <fieldset>
+        <legend>Personal date</legend>
+        <p>
+        <label>First name:
+        <input id="firstName" type ="text"  name="firstName">
+        </label>
+        </p>
+        <p>
+        <label>Last name:
+        <input id="last_Name" type ="text"  name="lastName">
+        </label>
+        </p>
+        <p>
+            <label for="E-mail">E-mail:
+            <input id="E-mail" type ="email"  name="Email" required autofocus>
+            </label>
+        </p>
+        <p>
+            <label>Password
+            <input id="password" type ="password"  name="password" required>
+            </label>
+        </p>
+        <p>
+            Gender:
+            <label>Male
+                <input type="radio" name="gender" value="male">
+            </label>
+            <label>Female
+                <input type="radio" name="gender" value="female">
+            </label>
+        </p>
+        <p>
+            <label> Cars</label>
+            <select>
+                <option>GMC</option>
+                <option>VW</option>
+                <option>BMW</option>
+            </select>
+        </p>
+        <p>
+            <label>Comments:
+                <textarea name="comments" cols="40" rows="10"></textarea>
+            </label>
+        </p>
+    </fieldset>
+    <input type="submit" value="send">
+    <input type="reset" value="Clear">
+    <input type="button" value="Back">
+    <input type="button" value="Forward">
+
+    </form>
+    </body>
+    </html>
