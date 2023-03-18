@@ -1,3 +1,10 @@
+addItem.onclick = inputInfo;
+itemEvent.onkeypress = inputInfo;
+clearItem.onclick = clearInfo;
+
+function clearInfo(e){
+    itemEvent.value = '';
+}
 function createButtonDel(e){
     const buttonDel = document.createElement('button');
     buttonDel.appendChild(document.createTextNode('x'));
@@ -9,17 +16,21 @@ function createButtonDel(e){
 }
 
 
-function  inputInfo (e){
-    alert("inputInfo");
-    const text = item.value.trim();
-    if (text) {
-        const li = document.createElement('li');
-        li.appendChild(document.createTextNode(text));
-        li.appendChild(createButtonDel());
-        todoList.appendChild(li);
-        item.value = '';
-    }
-    else {
-        alert("not text");
+function  inputInfo (e) {
+    var key = e.keyCode || e.which;
+    console.log("key = ", key)
+    const text = itemEvent.value.trim();
+    console.log("text = ", text)
+
+    if ((key === 13) || (key===1)) {
+        if (text) {
+            const li = document.createElement('li');
+            li.appendChild(document.createTextNode(text));
+            li.appendChild(createButtonDel());
+            todoList.appendChild(li);
+            itemEvent.value = '';
+        } else {
+            alert("not text");
+        }
     }
 }
