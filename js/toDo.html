@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="./toDo.js" defer></script>
-    <link rel="stylesheet" href="./toD0.css">
+<!--    <link rel="stylesheet" href="./toD0.css">-->
     <script src="./utils.js" defer></script>
 </head>
 <body>
@@ -12,9 +11,9 @@
 To Do
 </h1>
 <label>Add new item:
-    <input type="text" id="item"  placeholder="new item">
+    <input type="text" id = "item" onkeypress="inputInfo(e)" placeholder="new item">
 </label>
-<button  id="addItem"> Add item</button>
+<button  id="addItem" onclick="inputInfo(e)"> Add item</button>
 <ol id="todoList"></ol>
 </body>
 </html>
